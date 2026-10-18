@@ -18,6 +18,6 @@ named-checkzone manuel.test /var/lib/bind/manuel.test.dns
 named-checkzone 56.168.192.in-addr.arpa /var/lib/bind/manuel.test.rev
 
 systemctl restart bind9
-systemctl enable bind9
+systemctl enable named.service
 
 echo "Configuración DNS aplicada correctamente."
