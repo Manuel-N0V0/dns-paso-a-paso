@@ -1,0 +1,15 @@
+;
+; manuel.test
+;
+$TTL    86400
+@   IN  SOA debian.manuel.test. admin.manuel.test. (
+                  3     ; Serial
+               3600     ; Refresh
+               1800     ; Retry
+             604800     ; Expire
+              86400 )   ; Negative Cache TTL
+;
+@       IN  NS      debian.manuel.test.
+debian.manuel.test. IN  A       192.168.56.10
+web IN CNAME debian.manuel.test.
+@ IN TXT "Manuel-N0V0"
